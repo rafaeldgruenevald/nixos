@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      inputs.nixvim.nixosModules.nixvim
     ];
   
   # Enable Flakes
@@ -26,6 +27,11 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  # Bluetooth
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+  services.blueman.enable = true;
 
   # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
@@ -109,6 +115,21 @@
     xkb.variant = "";
   };
 
+  # Installing Nerd Fonts
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    ubuntu_font_family
+    font-awesome
+  ];
+
+  fonts.fontconfig = {
+    defaultFonts = {
+      serif = [ "Ubuntu" ];
+      sansSerif = [ "Ubuntu" ];
+      monospace = [ "JetBrainsMono" ];
+    };
+  };
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -146,27 +167,102 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # NixVim
+  programs.nixvim.enable = true;
+
+  programs.nixvim.colorschemes.gruvbox.enable = true;
+
+  programs.nixvim.plugins = {
+    lualine.enable = true;
+    telescope.enable = true;
+    oil.enable = true;
+    treesitter.enable = true;
+    luasnip.enable = true;
+  };
+
+  programs.nixvim.plugins.lsp = {
+    enable = true;
+
+    servers = {
+      
+      tsserver.enable = true;
+
+      lua-ls.enable = true;
+
+      rust-analyzer.enable = true;
+      rust-analyzer.installCargo = true;
+      rust-analyzer.installRustc = true;
+
+    };
+  };
+
+  programs.nixvim.plugins.nvim-cmp = {
+    enable = true;
+    autoEnableSources = true;
+    sources = [
+      {name = "nvim_lsp";}
+      {name = "path";}
+      {name = "buffer";}
+    ];
+    mapping = {
+      "<CR>" = "cmp.mapping.confirm({ select = true })";
+      "<Tab>" = {
+        action = ''
+	  function(fallback)
+	    if cmp.visible() then
+	      cmp.select_next_item()
+	    elseif luasnip.expandable() then
+	      luasnip.expand()
+	    elseif luasnip.expand_or_jumpable() then
+	      luasnip.expand_or_jump()
+	    elseif check_backspace() then
+	      fallback()
+	    else
+	      fallback()
+	    end
+	  end
+	'';
+	modes = [ "i" "s" ];
+      };
+    };
+  };
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    # System
+    # System Bar
     (waybar.overrideAttrs (oldAttrs: {
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
       })
     )
-    dunst
+    # Notifications
+    mako
     libnotify
+    # Wallpapers
     swww
+    # App Launcher
     rofi-wayland
+    # Applets
     networkmanagerapplet
-    # Essential
+    # Audio Controls
+    pavucontrol
+    pamixer
+    playerctl
+    # Utils
+    wget
+    bottom
+    htop
+    neofetch
+    # Fonts
+    iosevka
+    # Essentials
     git
     vim 
     alacritty
-    kitty
     # Other
-    wget
+    armcord
   ];
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -179,7 +275,8 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
+  programs.ssh.startAgent = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
