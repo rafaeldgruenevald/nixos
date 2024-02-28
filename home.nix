@@ -3,19 +3,15 @@
 {
   imports = [
     inputs.nix-colors.homeManagerModules.default
+    ./features/mako.nix
+    ./features/alacritty.nix
+    inputs.nixvim.homeManagerModules.nixvim
+    ./features/nixvim.nix
   ];
+  ./features/nixvim.nix
 
+  # Base 16 Color Scheme
   colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
-
-  services.mako = {
-    enable = true;
-    backgroundColor = "#${config.colorScheme.colors.base01}";
-    borderColor = "#${config.colorScheme.colors.base0E}";
-    borderRadius = 5;
-    borderSize = 2;
-    textColor = "#${config.colorScheme.colors.base04}";
-    layer = "overlay";
-  };
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
