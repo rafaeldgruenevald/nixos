@@ -184,6 +184,9 @@
     rofi-wayland
     # Applets
     networkmanagerapplet
+    # GTK Theme 
+    kora-icon-theme
+    gruvbox-dark-gtk
     # Audio Controls
     pavucontrol
     pamixer
@@ -204,6 +207,9 @@
     steam
     armcord
   ];
+
+  # Thunar
+  programs.thunar.enable = true;
 
 
   # Some programs need SUID wrappers, can be configured further or are

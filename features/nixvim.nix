@@ -33,10 +33,21 @@
       servers = {
         tsserver.enable = true;
 
+	html.enable = true;
+
+	tailwindcss.enable = true;
+
+	cssls.enable = true;
+
+	gopls.enable = true;
+
+	clangd.enable = true;
+
         lua-ls = {
           enable = true;
           settings.telemetry.enable = false;
         };
+
         rust-analyzer = {
           enable = true;
           installCargo = true;
