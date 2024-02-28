@@ -15,6 +15,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nix-colors.url = "github:misterio77/nix-colors";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -29,10 +31,10 @@
     {
     
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {
-          specialArgs = {inherit inputs;};
+          specialArgs = {inherit inputs system;};
           modules = [ 
             ./configuration.nix
-            inputs.home-manager.nixosModules.default
+	    inputs.home-manager.nixosModules.default
           ];
         };
 

@@ -1,6 +1,22 @@
 { config, pkgs, inputs, ... }:
 
 {
+  imports = [
+    inputs.nix-colors.homeManagerModules.default
+  ];
+
+  colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
+
+  services.mako = {
+    enable = true;
+    backgroundColor = "#${config.colorScheme.colors.base01}";
+    borderColor = "#${config.colorScheme.colors.base0E}";
+    borderRadius = 5;
+    borderSize = 2;
+    textColor = "#${config.colorScheme.colors.base04}";
+    layer = "overlay";
+  };
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "rafael";
@@ -23,11 +39,4 @@
   };
 
   programs.home-manager.enable = true;
-
-  gtk = {
-    enable = true;
-    theme.name = "Adwaita-dark";
-    cursorTheme.name = "KDE Classic";
-    iconTheme.name = "Gruvbox-dark-icons-gtk";
-  };
 }
