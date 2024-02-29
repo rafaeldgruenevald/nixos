@@ -16,6 +16,8 @@
     colorschemes.gruvbox.enable = true;
 
     plugins = {
+      bufferline.enable = true;
+
       lualine.enable = true;
 
       telescope.enable = true;
@@ -87,6 +89,12 @@
           modes = [ "i" "s" ];
         };
       };
+
     };
+
+    extraPlugins = with pkgs.vimPlugins; [
+      vim-dadbod
+      vim-dadbod-ui
+    ];
   };
 }

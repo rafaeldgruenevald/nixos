@@ -56,7 +56,7 @@
 	}
 	{
 	  name = "Classroom";
-	  url = "https://edu.google.com/intl/ALL_br/workspace-for-education/classroom/";
+	  url = "https://classroom.google.com/u/1/h";
 	}
 	{
 	  name = "Proton Mail";
@@ -73,10 +73,6 @@
 	{
 	  name = "r/Piracy";
 	  url = "https://www.reddit.com/r/Piracy/wiki/megathread/";
-	}
-	{
-	  name = "r/piracy";
-	  url = "https://www.reddit.com/r/piracy/wiki/megathread/";
 	}
 	{
 	  name = "Rezi";
@@ -105,7 +101,7 @@
 	}
 	{
 	  name = "Classroom";
-	  url = "https://edu.google.com/intl/ALL_br/workspace-for-education/classroom/";
+	  url = "https://classroom.google.com/u/1/h";
 	}
 	{
 	  name = "Proton Mail";

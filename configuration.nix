@@ -202,6 +202,7 @@
     git
     vim 
     alacritty
+    dbeaver
     # Other
     lutris
     steam
@@ -211,6 +212,18 @@
   # Thunar
   programs.thunar.enable = true;
 
+  # Virtual Box
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
+  virtualisation.virtualbox.guest.enable = true;
+  virtualisation.virtualbox.guest.x11 = true;
+  users.extraGroups.vboxusers.members = [ "rafael" ];
+
+  # MySql
+  services.mysql = {
+    enable = true;
+    package = pkgs.mariadb;
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
