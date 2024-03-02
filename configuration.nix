@@ -149,10 +149,14 @@
   users.users.rafael = {
     isNormalUser = true;
     description = "rafael";
+    shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       firefox
-    #  thunderbird
+      steam
+      lutris
+      wineWowPackages.stable
+      winetricks
     ];
   };
 
@@ -191,8 +195,11 @@
     pavucontrol
     pamixer
     playerctl
+    # Screen Shots
+    grim
+    slurp
+    wl-clipboard
     # Utils
-    wget
     bottom
     htop
     neofetch
@@ -202,15 +209,17 @@
     git
     vim 
     alacritty
-    dbeaver
+    nodejs
+    gcc
     # Other
-    lutris
-    steam
     armcord
   ];
 
   # Thunar
   programs.thunar.enable = true;
+
+  # Enable zsh
+  programs.zsh.enable = true;
 
   # Virtual Box
   virtualisation.virtualbox.host.enable = true;
