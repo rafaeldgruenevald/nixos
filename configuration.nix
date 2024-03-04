@@ -99,7 +99,7 @@
     xwayland.enable = true;
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
- 
+
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
@@ -117,7 +117,7 @@
 
   # Installing Nerd Fonts
   fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" ]; })
     ubuntu_font_family
     font-awesome
   ];
@@ -157,6 +157,7 @@
       lutris
       wineWowPackages.stable
       winetricks
+      spotify
     ];
   };
 
@@ -206,6 +207,7 @@
     # Fonts
     iosevka
     # Essentials
+    eza
     git
     vim 
     alacritty

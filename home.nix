@@ -9,7 +9,7 @@
     ./features/nixvim.nix
     ./features/lf.nix
     ./features/firefox.nix
-    ./features/tmux.nix
+    ./features/zellij.nix
     ./features/zsh.nix
   ];
 

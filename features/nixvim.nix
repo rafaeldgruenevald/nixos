@@ -16,8 +16,6 @@
     colorschemes.gruvbox.enable = true;
 
     plugins = {
-      bufferline.enable = true;
-
       lualine.enable = true;
 
       telescope.enable = true;

@@ -3,6 +3,9 @@
 {
   programs.alacritty.enable = true;
   programs.alacritty.settings = {
+    window = {
+      opacity = 0.95;
+    };
     colors = with config.colorScheme.palette; {
       bright = {
         black = "0x${base00}";
