@@ -153,10 +153,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       firefox
-      steam
-      lutris
-      wineWowPackages.stable
-      winetricks
       spotify
     ];
   };
@@ -213,6 +209,8 @@
     alacritty
     nodejs
     gcc
+    arduino-ide
+    arduino-cli
     # Other
     armcord
   ];
@@ -249,6 +247,9 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
   programs.ssh.startAgent = true;
+
+  # Flatpak
+  services.flatpak.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
