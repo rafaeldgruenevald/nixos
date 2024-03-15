@@ -4,13 +4,13 @@
   imports = [
     inputs.nix-colors.homeManagerModules.default
     inputs.nixvim.homeManagerModules.nixvim
-    ./features/mako.nix
-    ./features/alacritty.nix
-    ./features/nixvim.nix
-    ./features/lf.nix
-    ./features/firefox.nix
-    ./features/zellij.nix
-    ./features/zsh.nix
+    ./config/mako.nix
+    ./config/alacritty.nix
+    ./config/nixvim.nix
+    ./config/lf.nix
+    ./config/firefox.nix
+    ./config/zellij.nix
+    ./config/zsh.nix
   ];
 
   # Base 16 Color Scheme

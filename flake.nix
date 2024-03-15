@@ -1,5 +1,5 @@
 {
-  description = "Nixos config flake";
+  description = "nixos config";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -38,7 +38,7 @@
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs system;};
           modules = [ 
-            ./configuration.nix
+            ./hosts/default/configuration.nix
 	    inputs.home-manager.nixosModules.default
           ];
         };
