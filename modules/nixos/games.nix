@@ -10,7 +10,10 @@
     vesktop
   ];
 
-  # ADD STEAM COMPAT TOOLS PATH!!!
+  environment.sessionVariables = {
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS =
+      "home/rafael/.steam/root/compatibilitytools.d";
+  };
 
   programs.steam.enable = true;
   programs.steam.gamescopeSession.enable = true;
