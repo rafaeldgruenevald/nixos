@@ -92,15 +92,15 @@
   # NVIDIA
   services.xserver.videoDrivers = [ "nvidia" ];
 
-  hardware.nvidia.prime = {
-    sync.enable = true;
-    
+  #hardware.nvidia.prime = {
+  #  sync.enable = true;
+
     # integrated
-    amdgpuBusId = "PCI:5:0:0";
+  #  amdgpuBusId = "PCI:5:0:0";
 
     # dedicated
-    nvidiaBusId = "PCI:1:0:0";
-  };
+  #  nvidiaBusId = "PCI:1:0:0";
+  #};
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.rafael = {
