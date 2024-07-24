@@ -14,6 +14,7 @@
 
     # DB Management
     dbeaver-bin
+    lazysql
 
     # Grep
     ripgrep
