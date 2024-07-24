@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     # Version Control
     git
+    gitui
     gh
 
     # IDES
