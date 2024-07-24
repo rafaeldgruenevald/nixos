@@ -22,6 +22,7 @@
     eza
     zoxide
     bat
+    tldr
   ];
 
   programs.neovim.enable = true;

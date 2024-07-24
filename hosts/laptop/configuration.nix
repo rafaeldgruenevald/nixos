@@ -108,10 +108,16 @@
     description = "rafael";
     extraGroups = [ "networkmanager" "wheel" "root" "libvirtd" "docker" ];
     packages = with pkgs; [
+      # GNOME Stuff
       dconf-editor
       gnome-tweaks
       gnome-extension-manager
+
+      # Torrent
       qbittorrent
+
+      # Music
+      spotify
     ];
   };
 
