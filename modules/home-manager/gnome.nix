@@ -38,6 +38,7 @@
     # GNOME Just-Perfection Config
     "org/gnome/shell/extensions/just-perfection" = {
       workspace-popup = false; 
+      animation=0;
     };
     # GNOME Desktop Keybinds
     "org/gnome/desktop/wm/keybindings" = {
