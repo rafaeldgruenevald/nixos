@@ -23,6 +23,7 @@
     zoxide
     bat
     tldr
+    fastfetch
   ];
 
   programs.neovim.enable = true;
