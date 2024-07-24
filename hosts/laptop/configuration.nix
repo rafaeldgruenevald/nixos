@@ -12,6 +12,7 @@
       ../../modules/nixos/virtualisation.nix
       ../../modules/nixos/office.nix
       ../../modules/nixos/games.nix
+      ../../modules/nixos/bash.nix
       inputs.home-manager.nixosModules.default
     ];
 
