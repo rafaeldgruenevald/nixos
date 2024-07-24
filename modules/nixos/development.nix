@@ -14,6 +14,9 @@
     # DB Management
     dbeaver-bin
 
+    # Grep
+    ripgrep
+
     # Terminal Utils
     eza
     zoxide

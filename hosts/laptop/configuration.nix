@@ -171,6 +171,8 @@
       set -e
       pushd ~/nixos/
 
+      git add .
+
       nh os switch
 
       current=$(nixos-rebuild list-generations | grep current)
