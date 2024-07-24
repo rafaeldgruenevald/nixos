@@ -16,9 +16,8 @@
     ];
 
   # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/vda";
-  boot.loader.grub.useOSProber = true;
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "laptop"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -86,6 +85,19 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  # NVIDIA
+  services.xserver.videoDrivers = [ "nvidia" ];
+
+  hardware.nvidia.prime = {
+    sync.enable = true;
+    
+    # integrated
+    amdgpuBusId = "PCI:5:0:0";
+
+    # dedicated
+    nvidiaBusId = "PCI:1:0:0";
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.rafael = {
     isNormalUser = true;
@@ -151,6 +163,28 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
      nh
+    (writeShellScriptBin "rebuild" ''
+      set -e
+      pushd ~/nixos/
+
+      if git diff --quiet '*.nix'; then
+        echo "No changes detected, exiting."
+	popd
+	exit 0
+      fi
+
+      git diff -U0 '*.nix'
+
+      echo "NixOS Rebuilding..."
+
+      nh os switch
+
+      current=$(nixos-rebuild list-generations | grep current)
+
+      git commit -am "$current"
+
+      popd
+    '')
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
