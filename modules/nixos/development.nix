@@ -17,6 +17,7 @@
     # Terminal Utils
     eza
     zoxide
+    bat
   ];
 
   programs.neovim.enable = true;
