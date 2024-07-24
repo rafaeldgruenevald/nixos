@@ -167,21 +167,12 @@
       set -e
       pushd ~/nixos/
 
-      if git diff --quiet '*.nix'; then
-        echo "No changes detected, exiting."
-	popd
-	exit 0
-      fi
-
-      git diff -U0 '*.nix'
-
-      echo "NixOS Rebuilding..."
-
       nh os switch
 
       current=$(nixos-rebuild list-generations | grep current)
 
       git commit -am "$current"
+      git push
 
       popd
     '')
