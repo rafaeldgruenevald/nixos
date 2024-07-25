@@ -12,6 +12,7 @@
     retroarch
     dolphin-emu
     ryujinx
+    cemu
     # Simple virtual machines
     bottles
     # Discord
