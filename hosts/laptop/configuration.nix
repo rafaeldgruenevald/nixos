@@ -117,6 +117,12 @@
       # Torrent
       qbittorrent
 
+      # Matrix
+      fractal
+
+      # Mastodon
+      tuba
+
       # Music
       spotify
     ];
