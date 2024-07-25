@@ -164,7 +164,7 @@
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
       name = "Lauch Terminal";
-      command = "alacritty";
+      command = "kitty";
       binding = "<Super>Return";
     };
   };
