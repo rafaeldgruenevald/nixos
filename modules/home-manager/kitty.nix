@@ -8,5 +8,9 @@
     font.name = "JetBrainsMono Nerd Font Mono";
     font.size = 13;
     shellIntegration.enableBashIntegration = true;
+    settings = {
+      hide_window_decorations = true;
+      background_opacity = "0.9";
+    };
   };
 }
