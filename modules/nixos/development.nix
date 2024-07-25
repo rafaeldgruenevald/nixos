@@ -2,6 +2,9 @@
 
 {
   environment.systemPackages = with pkgs; [
+    # Terminal
+    kitty
+
     # Version Control
     git
     gitui
