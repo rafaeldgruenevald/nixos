@@ -2,11 +2,19 @@
 
 {
   environment.systemPackages = with pkgs; [
+    # Utility apps
     protonup
     mangohud
+    # Windows games and Epic
     lutris
     heroic
+    # Emulation
+    retroarch
+    dolphin-emu
+    ryujinx
+    # Simple virtual machines
     bottles
+    # Discord
     vesktop
   ];
 

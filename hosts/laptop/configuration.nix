@@ -167,9 +167,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Bash Completion
-  environment.pathsToLink = [ "/share/bash-completion" ];
-
   # NixOS Helper
   environment.sessionVariables = {
     FLAKE = "/home/rafael/nixos";
