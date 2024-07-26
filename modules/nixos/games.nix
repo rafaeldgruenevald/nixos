@@ -8,6 +8,8 @@
     # Windows games and Epic
     lutris
     heroic
+    # Minecraft
+    atlauncher
     # Emulation
     retroarch
     dolphin-emu
