@@ -8,8 +8,6 @@
     # Windows games and Epic
     lutris
     heroic
-    # Minecraft
-    jdk22
     # Emulation
     retroarch
     dolphin-emu
