@@ -9,7 +9,7 @@
     lutris
     heroic
     # Minecraft
-    atlauncher
+    jdk22
     # Emulation
     retroarch
     dolphin-emu
