@@ -2,7 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    # Langs
     # Version Control
     git
     gitui
@@ -26,6 +25,9 @@
     bat
     tldr
     fastfetch
+
+    # Langs
+    go
   ];
 
   programs.neovim.enable = true;

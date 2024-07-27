@@ -119,8 +119,6 @@
 
       # Music
       spotify
-
-      go
     ];
   };
 
