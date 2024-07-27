@@ -3,8 +3,6 @@
 {
   environment.systemPackages = with pkgs; [
     # Langs
-    go
-
     # Version Control
     git
     gitui
