@@ -29,6 +29,4 @@
     # Langs
     go
   ];
-
-  programs.neovim.enable = true;
 }
