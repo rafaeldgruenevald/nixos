@@ -77,7 +77,7 @@
 	enable = true;
 
 	keymaps = {
-	  "<leader>sh" = "builtin.help_tags";
+	  "<leader>sh" = "help_tags";
 	};
       };
 
