@@ -13,7 +13,7 @@
       shiftwidth = 2;
     };
 
-    globals.mapleader = " ";
+    globals.mapleader = "<20>";
 
     plugins = {
       bufferline.enable = true;
