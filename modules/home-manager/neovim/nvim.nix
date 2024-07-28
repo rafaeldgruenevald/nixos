@@ -85,6 +85,15 @@
 	enable = true;
 	autoEnableSources = true;
 
+	filetype = {
+	  sql = {
+	    sources = [
+	      {name = "vim-dadbod-completion";}
+	      {name = "buffer"; }
+	    ];
+	  };
+	};
+
 	settings = {
 	  sources = [
 	    {name = "nvim_lsp";}
