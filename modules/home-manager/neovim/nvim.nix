@@ -112,7 +112,6 @@
 	  keymaps = {
 	    "<C-h>" = false;
 	    "<C-r>" = "actions.refresh";
-	    "<leader>qq" = "actions.close";
 	  };
 	  view_options = {
 	    show_hidden = true;
