@@ -16,10 +16,13 @@
     dbeaver-bin
     lazysql
 
-    # Grep
+    # General Utils
     ripgrep
+    cmake
+    unzip
 
     # Terminal Utils
+    fd
     eza
     zoxide
     bat
