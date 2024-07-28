@@ -20,7 +20,7 @@
 
     autoCmd = [
       {
-	command = "vim.highlight.on_yank()";
+	command = "<CMD> lua vim.highlight.on_yank()<CR>";
 	event = [ "TextYankPost"];
       }
     ];
