@@ -20,7 +20,11 @@
 
     autoCmd = [
       {
-	callback = "vim.highlight.on_yank()";
+	callback = ''
+	  function()
+	    vim.highlight.on_yank()
+	  end
+	'';
 	event = [ "TextYankPost"];
       }
     ];
