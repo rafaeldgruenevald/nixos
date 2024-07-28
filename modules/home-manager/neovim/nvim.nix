@@ -21,8 +21,26 @@
         enable = true;
 
 	servers = {
+	  # nix
+	  nixd.enable = true;
+
+	  # json
+	  jsonls.enable = true;
+
 	  # javascript / typescript
 	  tsserver.enable = true;
+
+	  # css
+	  cssls.enable = true;
+
+	  # tailwind
+	  tailwindcss.enable = true;
+
+	  # html
+	  html.enable = true;
+
+	  # htmx
+	  htmx.enable = true;
 	  
 	  # lua
 	  lua-ls.enable = true;
@@ -30,8 +48,17 @@
 	  # golang
 	  gopls.enable = true;
 
+	  # C/C++
+	  clangd.enable = true;
+
+	  # cmake
+	  cmake.enable = true;
+
 	  # rust
 	  rust-analyzer.enable = true;
+
+	  # sql
+	  sqls.enable = true;
 	};
       };
 
