@@ -106,43 +106,88 @@
 	servers = {
 	  # nix
 	  nixd.enable = true;
-
 	  # json
 	  jsonls.enable = true;
-
 	  # javascript / typescript
 	  tsserver.enable = true;
-
 	  # css
 	  cssls.enable = true;
-
 	  # tailwind
 	  tailwindcss.enable = true;
-
 	  # html
 	  html.enable = true;
-
 	  # htmx
 	  htmx.enable = true;
-	  
 	  # lua
 	  lua-ls.enable = true;
-
 	  # golang
 	  gopls.enable = true;
-
 	  # C/C++
 	  clangd.enable = true;
-
 	  # cmake
 	  cmake.enable = true;
-
 	  # rust
 	  rust-analyzer.enable = true;
-
 	  # sql
 	  sqls.enable = true;
 	};
+
+	keymaps.extra = [
+	  {
+	    action = {
+	      __raw = "require('telescope.builtin').lsp_definitions()";
+	    };
+	    key = "gd";
+	  }
+	  {
+	    action = {
+	      __raw = "require('telescope.builtin').lsp_references()";
+	    };
+	    key = "gr";
+	  }
+	  {
+	    action = {
+	      __raw = "require('telescope.builtin').lsp_implementations()";
+	    };
+	    key = "gI";
+	  }
+	  {
+	    action = {
+	      __raw = "require('telescope.builtin').lsp_type_definitions()";
+	    };
+	    key = "<leader>D";
+	  }
+	  {
+	    action = {
+	      __raw = "require('telescope.builtin').lsp_document_symbols()";
+	    };
+	    key = "<leader>ds";
+	  }
+	  {
+	    action = {
+	      __raw = "require('telescope.builtin').lsp_dynamic_workspace_symbols()";
+	    };
+	    key = "<leader>ds";
+	  }
+	  {
+	    action = {
+	      __raw = "vim.lsp.buf.rename()";
+	    };
+	    key = "<leader>rn";
+	  }
+	  {
+	    action = {
+	      __raw = "vim.lsp.buf.code_action()";
+	    };
+	    key = "<leader>ca";
+	  }
+	  {
+	    action = {
+	      __raw = "vim.lsp.buf.declaration()";
+	    };
+	    key = "gD";
+	  }
+	];
       };
 
       cmp = {
