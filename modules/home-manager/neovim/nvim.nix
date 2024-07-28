@@ -13,7 +13,14 @@
       shiftwidth = 2;
     };
 
-    globals.mapleader = "<20>";
+    globals.mapleader = " ";
+
+    keymaps = [
+      {
+	action = "<CMD>Oil<CR>";
+	key = "<leader>e";
+      }
+    ];
 
     plugins = {
       bufferline.enable = true;
@@ -100,7 +107,6 @@
 	  columns = [ "icon" ];
 	  keymaps = {
 	    "<C-h>" = false;
-	    "<leader>e" = "<CMD>Oil<CR>";
 	  };
 	  view_options = {
 	    show_hidden = true;
