@@ -1,1 +1,3 @@
-string.len
+local sadfsadfe
+
+asdfas()
