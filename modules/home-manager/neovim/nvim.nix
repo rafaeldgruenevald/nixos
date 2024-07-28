@@ -134,7 +134,9 @@
 
 	keymaps.extra = [
 	  {
-	    action = "<CMD>require('telescope.builtin').lsp_definitions()<CR>";
+	    action = {
+	      __raw = "require('telescope.builtin').lsp_definitions()";
+	    };
 	    key = "gd";
 	  }
 	  # {
