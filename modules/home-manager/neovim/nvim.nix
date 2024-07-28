@@ -36,7 +36,7 @@
 	mode = "n";
       }
       {
-	action = "<CMD>lua vim.diagnostic.goto_next()<CR>";
+	action = "vim.diagnostic.goto_next()";
 	key = "]d";
 	mode = "n";
       }
