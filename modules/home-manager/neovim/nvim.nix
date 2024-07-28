@@ -18,6 +18,13 @@
     globals.mapleader = " ";
     globals.maplocalleader = " ";
 
+    autoCmd = [
+      {
+	command = "vim.highlight.on_yank()";
+	event = [ "TextYankPost"];
+      }
+    ];
+
     keymaps = [
       /* Close buffer */
       {
@@ -36,7 +43,7 @@
 	mode = "n";
       }
       {
-	action = "vim.diagnostic.goto_next()";
+	action = "<CMD>lua vim.diagnostic.goto_next()<CR>";
 	key = "]d";
 	mode = "n";
       }
