@@ -21,7 +21,6 @@
     autoCmd = [
       {
 	event = [ "TextYankPost" ];
-	group = "highlight-yank";
 	callback = {
 	  __raw = "function() vim.highlight.on_yank() end";
 	};
