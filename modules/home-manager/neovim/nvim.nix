@@ -19,14 +19,33 @@
     globals.maplocalleader = " ";
 
     keymaps = [
+      /* Close buffer */
       {
 	action = "<CMD>bd<CR>";
 	key = "<leader>q";
       }
+      /* Save buffer */
       {
 	action = "<CMD>w<CR>";
 	key = "<leader>w";
       }
+      /* Diagnostics */
+      {
+	action = "vim.diagnostics.goto_prev";
+	key = "[d";
+	mode = "n";
+      }
+      {
+	action = "vim.diagnostics.goto_next";
+	key = "]d";
+	mode = "n";
+      }
+      {
+	action = "vim.diagnostics.open_float";
+	key = "<leader>d";
+	mode = "n";
+      }
+      /* Open Oil */
       {
 	action = "<CMD>Oil<CR>";
 	key = "<leader>e";
