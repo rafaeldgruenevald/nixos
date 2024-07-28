@@ -20,6 +20,7 @@
     ripgrep
     cmake
     unzip
+    wget
 
     # Terminal Utils
     fd
@@ -33,5 +34,7 @@
     go
     gcc
     lua
+    rustup
+    nodejs_22
   ];
 }
