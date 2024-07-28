@@ -77,7 +77,26 @@
 	enable = true;
 
 	keymaps = {
+	  /*[S]earch [H]elp*/
 	  "<leader>sh" = "help_tags";
+	  /*[S]earch [K]eymaps*/
+	  "<leader>sk" = "keymaps";
+	  /*[S]earch [F]iles*/
+	  "<leader>sf" = "find_files";
+	  /*[S]earch [S]elect Telescope*/
+	  "<leader>ss" = "builtin";
+	  /*[S]earch [W]ord*/
+	  "<leader>sw" = "grep_string";
+	  /*[S]earch [G]rep*/
+	  "<leader>sg" = "live_grep";
+	  /*[S]earch [D]iagnostics*/
+	  "<leader>sd" = "diagnostics";
+	  /*[S]earch [R]esume*/
+	  "<leader>sr" = "resume";
+	  /*[S]earch Recent Files ("." for repeat)*/
+	  "<leader>s." = "oldfiles";
+	  /*[ ] Find existing buffers*/
+	  "<leader><leader>" = "buffers";
 	};
       };
 
