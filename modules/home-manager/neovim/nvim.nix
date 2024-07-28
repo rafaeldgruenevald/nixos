@@ -1,9 +1,8 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
-  stylix.targets.vim.enable = false;
-  programs.neovim = {
-    enable = true;
-    extraLuaConfig = lib.fileContents ./nvim/init.lua; 
-  };
+  imports = [
+    inputs.nixvim.homeManagerModules.nixvim
+  ];
+  programs.nixvim.enable = true;
 }
