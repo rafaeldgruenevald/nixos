@@ -41,7 +41,7 @@
 	mode = "n";
       }
       {
-	action = "<CMD>lua vim.diagnostics.open_float<CR>";
+	action = ''vim.diagnostics.open_float<CR>'';
 	key = "<leader>d";
 	mode = "n";
       }
