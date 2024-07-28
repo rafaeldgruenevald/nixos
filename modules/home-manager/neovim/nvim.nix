@@ -10,6 +10,8 @@
       number = true;
       relativenumber = true;
 
+      mouse = "a";
+
       shiftwidth = 2;
     };
 
