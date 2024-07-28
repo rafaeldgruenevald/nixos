@@ -3,6 +3,9 @@
 {
   programs.neovim.enable = true;
   home.file = {
-    nvim.source = ./nvim;
+    nvim = {
+      source = ./nvim;
+      target = "/home/rafael/.config/nvim";
+    };
   };
 }
