@@ -17,6 +17,10 @@
 
     keymaps = [
       {
+	action = "<CMD>bd<CR>";
+	key = "<leader>q";
+      }
+      {
 	action = "<CMD>Oil<CR>";
 	key = "<leader>e";
       }
