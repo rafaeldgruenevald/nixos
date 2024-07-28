@@ -21,6 +21,10 @@
 	key = "<leader>q";
       }
       {
+	action = "<CMD>w<CR>";
+	key = "<leader>w";
+      }
+      {
 	action = "<CMD>Oil<CR>";
 	key = "<leader>e";
       }
