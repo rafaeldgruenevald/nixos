@@ -135,7 +135,7 @@
 	keymaps.extra = [
 	  {
 	    action = {
-	      __raw = "require('telescope.builtin').lsp_definitions()";
+	      __raw = "function() require('telescope.builtin').lsp_definitions() end";
 	    };
 	    key = "gd";
 	  }
