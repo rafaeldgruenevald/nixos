@@ -65,6 +65,10 @@
       bufferline.enable = true;
       lualine.enable = true;
 
+      sleuth.enable = true;
+
+      comment.enable = true;
+
       treesitter.enable = true;
 
       lsp = {
