@@ -29,5 +29,6 @@
     # Langs
     go
     gcc
+    lua
   ];
 }
