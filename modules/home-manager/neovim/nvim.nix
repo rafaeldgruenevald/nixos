@@ -17,6 +17,8 @@
       bufferline.enable = true;
       lualine.enable = true;
 
+      treesitter.enable = true;
+
       lsp = {
         enable = true;
 
@@ -72,6 +74,10 @@
 	    {name = "path";}
 	    {name = "buffer";}
 	  ];
+
+	  mapping = {
+	    "<CR>" = "cmp.mapping.confirm({ select = true })";
+	  };
 	};
       };
     };
