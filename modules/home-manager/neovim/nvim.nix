@@ -12,5 +12,10 @@
 
       shiftwidth = 2;
     };
+
+    plugins = {
+      bufferline.enable = true;
+      lualine.enable = true;
+    };
   };
 }
