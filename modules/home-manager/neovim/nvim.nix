@@ -31,17 +31,17 @@
       }
       /* Diagnostics */
       {
-	action = "<CMD>lua vim.diagnostics.goto_prev()<CR>";
+	action = "<CMD>lua vim.diagnostic.goto_prev()<CR>";
 	key = "[d";
 	mode = "n";
       }
       {
-	action = "<CMD>lua vim.diagnostics.goto_next()<CR>";
+	action = "<CMD>lua vim.diagnostic.goto_next()<CR>";
 	key = "]d";
 	mode = "n";
       }
       {
-	action = "<CMD>lua vim.diagnostics.open_float()<CR>";
+	action = "<CMD>lua vim.diagnostic.open_float()<CR>";
 	key = "<leader>d";
 	mode = "n";
       }
