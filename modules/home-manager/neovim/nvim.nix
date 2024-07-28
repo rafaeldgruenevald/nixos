@@ -71,6 +71,16 @@
 
       treesitter.enable = true;
 
+      luasnip.enable = true;
+
+      telescope = {
+	enable = true;
+
+	keymaps = {
+	  "<leader>sh" = "builtin.help_tags";
+	};
+      };
+
       lsp = {
         enable = true;
 
@@ -148,9 +158,17 @@
 	};
       };
 
-      luasnip.enable = true;
+      gitsigns = {
+	enable = true;
 
-      telescope.enable = true;
+	settings.signs = {
+	  add = { text = "+"; };
+	  change = { text = "~"; };
+	  delete = { text = "_"; };
+	  topdelete = { text = "‾"; };
+	  changedelete = { text = "~"; };
+	};
+      };
       
       oil = {
 	enable = true;
