@@ -7,6 +7,7 @@
     ../../modules/home-manager/zellij.nix
     ../../modules/home-manager/starship.nix
     ../../modules/home-manager/bash.nix
+    ../../modules/home-manager/neovim/nvim.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
