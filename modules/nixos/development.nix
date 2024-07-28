@@ -34,6 +34,7 @@
     go
     gcc
     lua
+    lua-language-server
     rustup
     nodejs_22
   ];
