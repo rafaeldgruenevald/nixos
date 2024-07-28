@@ -135,37 +135,37 @@
 	keymaps.extra = [
 	  {
 	    action = {
-	      __raw = "require('telescope.builtin').lsp_definitions()";
+	      __raw = "require('telescope.builtin').lsp_definitions";
 	    };
 	    key = "gd";
 	  }
 	  {
 	    action = {
-	      __raw = "require('telescope.builtin').lsp_references()";
+	      __raw = "require('telescope.builtin').lsp_references";
 	    };
 	    key = "gr";
 	  }
 	  {
 	    action = {
-	      __raw = "require('telescope.builtin').lsp_implementations()";
+	      __raw = "require('telescope.builtin').lsp_implementations";
 	    };
 	    key = "gI";
 	  }
 	  {
 	    action = {
-	      __raw = "require('telescope.builtin').lsp_type_definitions()";
+	      __raw = "require('telescope.builtin').lsp_type_definitions";
 	    };
 	    key = "<leader>D";
 	  }
 	  {
 	    action = {
-	      __raw = "require('telescope.builtin').lsp_document_symbols()";
+	      __raw = "require('telescope.builtin').lsp_document_symbols";
 	    };
 	    key = "<leader>ds";
 	  }
 	  {
 	    action = {
-	      __raw = "require('telescope.builtin').lsp_dynamic_workspace_symbols()";
+	      __raw = "require('telescope.builtin').lsp_dynamic_workspace_symbols";
 	    };
 	    key = "<leader>ds";
 	  }
