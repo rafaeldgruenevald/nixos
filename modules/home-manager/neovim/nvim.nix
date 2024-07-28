@@ -13,6 +13,8 @@
       shiftwidth = 2;
     };
 
+    globals.mapleader = " ";
+
     plugins = {
       bufferline.enable = true;
       lualine.enable = true;
@@ -83,6 +85,25 @@
 	    "<CR>" = "cmp.mapping.confirm({ select = true })";
 	    "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
 	    "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+	  };
+	};
+      };
+
+      luasnip.enable = true;
+
+      telescope.enable = true;
+      
+      oil = {
+	enable = true;
+
+	settings = {
+	  columns = [ "icon" ];
+	  keymaps = {
+	    "<C-h>" = false;
+	    "<leader>e" = "<CMD>Oil<CR>";
+	  };
+	  view_options = {
+	    show_hidden = true;
 	  };
 	};
       };
