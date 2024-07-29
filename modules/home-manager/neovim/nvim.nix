@@ -283,6 +283,8 @@
 	    n_lines = 500;
 	  };
 	  surround = { };
+	  pairs = { };
+	  animate = { };
 	};
       };
     };
