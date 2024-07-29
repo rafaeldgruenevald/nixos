@@ -237,6 +237,11 @@
 	};
       };
 
+      conform-nvim = {
+	enable = true;
+	notifyOnError = true;
+      };
+
       gitsigns = {
 	enable = true;
 
