@@ -133,7 +133,6 @@
 	  # rust
 	  rust-analyzer.enable = true;
 	  # csharp :(
-	  csharp-ls.enable = true;
 	  omnisharp.enable = true;
 	  # sql
 	  sqls.enable = true;
