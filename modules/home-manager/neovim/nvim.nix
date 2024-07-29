@@ -138,30 +138,35 @@
 	      __raw = "function() require('telescope.builtin').lsp_definitions() end";
 	    };
 	    key = "gd";
+	    mode = "n";
 	  }
 	  {
 	    action = {
 	      __raw = "function() require('telescope.builtin').lsp_references() end";
 	    };
 	    key = "gr";
+	    mode = "n";
 	  }
 	  {
 	    action = {
 	      __raw = "function() require('telescope.builtin').lsp_implementations() end";
 	    };
 	    key = "gI";
+	    mode = "n";
 	  }
 	  {
 	    action = {
 	      __raw = "function() require('telescope.builtin').lsp_type_definitions() end";
 	    };
 	    key = "<leader>D";
+	    mode = "n";
 	  }
 	  {
 	    action = {
 	      __raw = "function() require('telescope.builtin').lsp_document_symbols() end";
 	    };
 	    key = "<leader>ds";
+	    mode = "n";
 	  }
 	  # {
 	  #   action = {
@@ -174,18 +179,28 @@
 	      __raw = "function() vim.lsp.buf.rename() end";
 	    };
 	    key = "<leader>rn";
+	    mode = "n";
 	  }
 	  {
 	    action = {
 	      __raw = "function() vim.lsp.buf.code_action() end";
 	    };
 	    key = "<leader>ca";
+	    mode = "n";
 	  }
 	  {
 	    action = {
 	      __raw = "function() vim.lsp.buf.declaration() end";
 	    };
 	    key = "gD";
+	    mode = "n";
+	  }
+	  {
+	    action = {
+	      __raw = "function() vim.lsp.buf.hover() end";
+	    };
+	    key = "K";
+	    mode = "n";
 	  }
 	];
       };
