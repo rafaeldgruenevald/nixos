@@ -151,12 +151,12 @@
 	    };
 	    key = "gI";
 	  }
-	  # {
-	  #   action = {
-	  #     __raw = "function() require('telescope.builtin').lsp_type_definitions() end";
-	  #   };
-	  #   key = "<leader>D";
-	  # }
+	  {
+	    action = {
+	      __raw = "function() require('telescope.builtin').lsp_type_definitions() end";
+	    };
+	    key = "<leader>D";
+	  }
 	  # {
 	  #   action = {
 	  #     __raw = "function() require('telescope.builtin').lsp_document_symbols() end";
