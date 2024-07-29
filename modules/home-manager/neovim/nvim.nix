@@ -139,12 +139,12 @@
 	    };
 	    key = "gd";
 	  }
-	  # {
-	  #   action = {
-	  #     __raw = "function() require('telescope.builtin').lsp_references() end";
-	  #   };
-	  #   key = "gr";
-	  # }
+	  {
+	    action = {
+	      __raw = "function() require('telescope.builtin').lsp_references() end";
+	    };
+	    key = "gr";
+	  }
 	  # {
 	  #   action = {
 	  #     __raw = "function() require('telescope.builtin').lsp_implementations() end";
