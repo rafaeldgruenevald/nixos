@@ -132,6 +132,8 @@
 	  cmake.enable = true;
 	  # rust
 	  rust-analyzer.enable = true;
+	  # csharp :(
+	  csharp-ls.enable = true;
 	  # sql
 	  sqls.enable = true;
 	};

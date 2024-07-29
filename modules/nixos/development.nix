@@ -9,6 +9,7 @@
 
     # IDES
     zed-editor
+    vscode
     jetbrains.idea-community
     arduino-ide
 
