@@ -157,12 +157,12 @@
 	    };
 	    key = "<leader>D";
 	  }
-	  # {
-	  #   action = {
-	  #     __raw = "function() require('telescope.builtin').lsp_document_symbols() end";
-	  #   };
-	  #   key = "<leader>ds";
-	  # }
+	  {
+	    action = {
+	      __raw = "function() require('telescope.builtin').lsp_document_symbols() end";
+	    };
+	    key = "<leader>ds";
+	  }
 	  # {
 	  #   action = {
 	  #     __raw = "function() require('telescope.builtin').lsp_dynamic_workspace_symbols end";
