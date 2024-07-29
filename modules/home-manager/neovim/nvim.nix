@@ -181,12 +181,12 @@
 	    };
 	    key = "<leader>ca";
 	  }
-	  # {
-	  #   action = {
-	  #     __raw = "function() vim.lsp.buf.declaration() end";
-	  #   };
-	  #   key = "gD";
-	  # }
+	  {
+	    action = {
+	      __raw = "function() vim.lsp.buf.declaration() end";
+	    };
+	    key = "gD";
+	  }
 	];
       };
 
