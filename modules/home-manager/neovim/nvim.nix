@@ -65,9 +65,13 @@
       bufferline.enable = true;
       lualine.enable = true;
 
+      todo-comments.enable = true;
+
       sleuth.enable = true;
 
       comment.enable = true;
+
+      indent-blankline.enable = true;
 
       treesitter.enable = true;
 
@@ -269,6 +273,16 @@
 	  view_options = {
 	    show_hidden = true;
 	  };
+	};
+      };
+
+      mini = {
+	enable = true;
+	modules = {
+	  ai = {
+	    n_lines = 500;
+	  };
+	  surround = { };
 	};
       };
     };
