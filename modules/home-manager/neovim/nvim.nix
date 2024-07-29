@@ -167,14 +167,14 @@
 	  #   action = {
 	  #     __raw = "function() require('telescope.builtin').lsp_dynamic_workspace_symbols end";
 	  #   };
-	  #   key = "<leader>ds";
+	  #   key = "<leader>ws";
 	  # }
-	  # {
-	  #   action = {
-	  #     __raw = "function() vim.lsp.buf.rename() end";
-	  #   };
-	  #   key = "<leader>rn";
-	  # }
+	  {
+	    action = {
+	      __raw = "function() vim.lsp.buf.rename() end";
+	    };
+	    key = "<leader>rn";
+	  }
 	  # {
 	  #   action = {
 	  #     __raw = "function() vim.lsp.buf.code_action() end";
