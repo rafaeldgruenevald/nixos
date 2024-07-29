@@ -175,12 +175,12 @@
 	    };
 	    key = "<leader>rn";
 	  }
-	  # {
-	  #   action = {
-	  #     __raw = "function() vim.lsp.buf.code_action() end";
-	  #   };
-	  #   key = "<leader>ca";
-	  # }
+	  {
+	    action = {
+	      __raw = "function() vim.lsp.buf.code_action() end";
+	    };
+	    key = "<leader>ca";
+	  }
 	  # {
 	  #   action = {
 	  #     __raw = "function() vim.lsp.buf.declaration() end";

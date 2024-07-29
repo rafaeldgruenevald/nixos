@@ -1,4 +1,4 @@
-local sadfsadfe = "test"
+local tst = "test"
 
-print(sadfsadfe);
+print(tst);
 
