@@ -282,7 +282,9 @@
 	  };
 	  surround = { };
 	  pairs = { };
-	  indentscope = { };
+	  indentscope = { 
+	    try_as_border = true;
+	  };
 	  animate = { };
 	};
       };
