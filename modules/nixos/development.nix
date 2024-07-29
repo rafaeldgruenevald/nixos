@@ -37,5 +37,6 @@
     lua-language-server
     rustup
     nodejs_22
+    dotnet-sdk_8
   ];
 }
