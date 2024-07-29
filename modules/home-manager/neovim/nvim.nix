@@ -320,7 +320,7 @@
 		key = "f";
 	      }
 	      {
-		action = "Telescope find_files({cwd: ~/nixos})";
+		action = "Telescope find_files search_dirs=~/nixos/";
 		desc = " dotfiles";
 		group = "Number";
 		key = "d";
