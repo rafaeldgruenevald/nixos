@@ -71,8 +71,6 @@
 
       comment.enable = true;
 
-      indent-blankline.enable = true;
-
       treesitter.enable = true;
 
       luasnip.enable = true;
@@ -284,6 +282,7 @@
 	  };
 	  surround = { };
 	  pairs = { };
+	  indentscope = { };
 	  animate = { };
 	};
       };
