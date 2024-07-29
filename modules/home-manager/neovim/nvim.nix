@@ -240,11 +240,8 @@
       conform-nvim = {
 	enable = true;
 	notifyOnError = true;
-	formattersByFt = {
-	  lua = [ "stylua" ];
-	  javascript = [ [ "prettierd" "prettier" ] ];
-	  "*" = [ "codespell" ];
-	};
+	formatOnSave.lspFallback = true;
+	formatOnSave.timeoutMs = 500;
       };
 
       gitsigns = {
