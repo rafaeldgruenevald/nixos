@@ -73,7 +73,14 @@
 
       treesitter.enable = true;
 
-      luasnip.enable = true;
+      luasnip = {
+	enable = true;
+
+	extraConfig = {
+	  enable_autosnippets = true;
+	  store_selection_keys = "<Tab>";
+	};
+      };
 
       telescope = {
 	enable = true;
@@ -282,10 +289,7 @@
 	  };
 	  surround = { };
 	  pairs = { };
-	  indentscope = { 
-	    try_as_border = true;
-	  };
-	  animate = { };
+	  indentscope = { };
 	};
       };
     };
