@@ -306,7 +306,7 @@
 	      limit = 20;
 	    };
 	    project = {
-	      enable = false;
+	      enable = true;
 	    };
 	    shortcut = [
 	      {
@@ -320,13 +320,7 @@
 		key = "f";
 	      }
 	      {
-		action = "Telescope app";
-		desc = " Apps";
-		group = "DiagnosticHint";
-		key = "a";
-	      }
-	      {
-		action = "Telescope dotfiles";
+		action = "Telescope find_files({cwd: ~/nixos})";
 		desc = " dotfiles";
 		group = "Number";
 		key = "d";
