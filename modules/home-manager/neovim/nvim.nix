@@ -145,12 +145,12 @@
 	    };
 	    key = "gr";
 	  }
-	  # {
-	  #   action = {
-	  #     __raw = "function() require('telescope.builtin').lsp_implementations() end";
-	  #   };
-	  #   key = "gI";
-	  # }
+	  {
+	    action = {
+	      __raw = "function() require('telescope.builtin').lsp_implementations() end";
+	    };
+	    key = "gI";
+	  }
 	  # {
 	  #   action = {
 	  #     __raw = "function() require('telescope.builtin').lsp_type_definitions() end";
