@@ -141,49 +141,49 @@
 	  }
 	  # {
 	  #   action = {
-	  #     __raw = "require('telescope.builtin').lsp_references";
+	  #     __raw = "function() require('telescope.builtin').lsp_references() end";
 	  #   };
 	  #   key = "gr";
 	  # }
 	  # {
 	  #   action = {
-	  #     __raw = "require('telescope.builtin').lsp_implementations";
+	  #     __raw = "function() require('telescope.builtin').lsp_implementations() end";
 	  #   };
 	  #   key = "gI";
 	  # }
 	  # {
 	  #   action = {
-	  #     __raw = "require('telescope.builtin').lsp_type_definitions";
+	  #     __raw = "function() require('telescope.builtin').lsp_type_definitions() end";
 	  #   };
 	  #   key = "<leader>D";
 	  # }
 	  # {
 	  #   action = {
-	  #     __raw = "require('telescope.builtin').lsp_document_symbols";
+	  #     __raw = "function() require('telescope.builtin').lsp_document_symbols() end";
 	  #   };
 	  #   key = "<leader>ds";
 	  # }
 	  # {
 	  #   action = {
-	  #     __raw = "require('telescope.builtin').lsp_dynamic_workspace_symbols";
+	  #     __raw = "function() require('telescope.builtin').lsp_dynamic_workspace_symbols end";
 	  #   };
 	  #   key = "<leader>ds";
 	  # }
 	  # {
 	  #   action = {
-	  #     __raw = "vim.lsp.buf.rename()";
+	  #     __raw = "function() vim.lsp.buf.rename() end";
 	  #   };
 	  #   key = "<leader>rn";
 	  # }
 	  # {
 	  #   action = {
-	  #     __raw = "vim.lsp.buf.code_action()";
+	  #     __raw = "function() vim.lsp.buf.code_action() end";
 	  #   };
 	  #   key = "<leader>ca";
 	  # }
 	  # {
 	  #   action = {
-	  #     __raw = "vim.lsp.buf.declaration()";
+	  #     __raw = "function() vim.lsp.buf.declaration() end";
 	  #   };
 	  #   key = "gD";
 	  # }

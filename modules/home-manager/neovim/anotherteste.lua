@@ -1,3 +1,4 @@
-local sadfsadfe
+local sadfsadfe = "test"
 
-asdfas()
+print(sadfsadfe);
+
