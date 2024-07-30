@@ -107,7 +107,7 @@
   users.users.rafael = {
     isNormalUser = true;
     description = "rafael";
-    extraGroups = [ "networkmanager" "wheel" "root" "libvirtd" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "root" "libvirtd" "docker" "vboxusers" ];
     packages = with pkgs; [
       # GNOME Stuff
       dconf-editor
