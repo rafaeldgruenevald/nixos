@@ -135,7 +135,7 @@
 	  # csharp :(
 	  omnisharp = {
 	    enable = true;
-	    rootDir = "function() vim.fs.dirname(vim.fs.find({'program.cs'}, { upware = true })[1]) end";
+	    rootDir = "function() return vim.fs.dirname(vim.fs.find({'program.cs'}, { upware = true })[1]) end";
 	  };
 	  # sql
 	  sqls.enable = true;
