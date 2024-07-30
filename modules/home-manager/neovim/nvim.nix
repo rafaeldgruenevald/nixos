@@ -133,7 +133,12 @@
 	  # rust
 	  rust-analyzer.enable = true;
 	  # csharp :(
-	  omnisharp.enable = true;
+	  omnisharp = {
+	    enable = true;
+	    rootDir = {
+	      __raw = "function() vim.fs.dirname(vim.fs.find({'*.cs'}, { upware = true})[1]) end";
+	    };
+	  };
 	  # sql
 	  sqls.enable = true;
 	};
