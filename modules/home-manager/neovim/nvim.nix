@@ -136,7 +136,7 @@
 	  omnisharp = {
 	    enable = true;
 	    rootDir = {
-	      __raw = "function() vim.fs.dirname(vim.fs.find({'*.cs'}, { upware = true})[1]) end";
+	      __raw = "function() vim.fs.dirname(vim.fs.find({'teste.cs'}, { upware = true})[1]) end";
 	    };
 	  };
 	  # sql
